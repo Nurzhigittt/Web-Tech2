@@ -1,0 +1,129 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(106, 239, 248);
+    padding: 20px;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+button {
+    margin-top: auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main-content"
+        "footer footer";
+}
+
+.grid-header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main-content {
+    grid-area: main-content;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightblue;
+}
+
+.sidebar,
+.main-content,
+.footer {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 200px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+}
+
+.gallery-item p {
+    display: none;
+}
+
+.gallery-item:hover p {
+    display: block;
+}
+
+.portfolio-sidebar {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.portfolio-main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: rgb(106, 239, 248);
+}
+
+.portfolio-card button {
+    margin-top: auto;
+}
