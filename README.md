@@ -99,7 +99,6 @@ First, I created a Flexbox navigation bar and a row of cards. Then I used CSS Gr
 
 
 
-
 https://nurzhigittt.github.io/Web-Tech2/
 
 
